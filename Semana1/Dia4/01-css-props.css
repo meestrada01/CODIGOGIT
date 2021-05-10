@@ -1,0 +1,39 @@
+body {
+  background-color: #333;
+  color: #eee;
+}
+
+h1 {
+  /*Tipo de letra*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 16px;
+  word-spacing: 20px;
+}
+
+.parrafo1 {
+  text-align: center;
+  line-height: 25px;
+}
+
+.btn1 {
+  text-align: center;
+}
+
+.articulo1 {
+  text-align: center;
+  /*
+  text-align: center - left - justify -right;
+  */
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
