@@ -1,0 +1,164 @@
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+* {
+    margin: 0;
+    background-color: rgb(21, 21, 21);
+}
+
+@font-face {
+    font-family: 'miPrimeraFuenta';
+    src: url('../fuentesGlobales/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'miFuenteMedium';
+    src: url('../fuentesGlobales/Montserrat/Montserrat-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'miFuenteBold';
+    src: url('../fuentesGlobales/Montserrat/Montserrat-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Teko-Bold';
+    src: url('../fuentesGlobales/Teko/Teko-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Teko-Light';
+    src: url('../fuentesGlobales/Teko/Teko-Light.ttf')
+}
+
+@font-face {
+    font-family: 'Teko-Medium';
+    src: url('../fuentesGlobales/Teko/Teko-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'Teko-SemiBold';
+    src: url('../fuentesGlobales/Teko/Teko-SemiBold.ttf')
+}
+
+h1, h2 {
+    font-family: "miPrimeraFuenta";
+    color: #ce055c;
+}
+
+.descripcion {
+    font-family: "miFuenteMedium";
+    font-size: 12px;
+    width: 200px;
+    height: 80px;
+    overflow: scroll;
+}
+
+.segundo__titulo {
+    font-family: "miFuenteBold"
+}
+
+.fuente__link::first-letter {
+    font-size: 72px;
+}
+
+.fuente__link {
+    font-family: 'Courgette', cursive;
+}
+
+a {
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-family: "miPrimeraFuenta"
+}
+
+a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #c00;
+}
+
+.portada__codigo {
+    background-image: url('../imagenesGlobal/codigo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.alto__total {
+    height: 100vh;
+}
+
+.tercer__titulo {
+    font: 42px "Teko-Medium";
+}
+
+.tercer__parrafo {
+    font: 16px "Teko-Medium";
+    border: 1px solid #c00;
+    background: -webkit-linear-gradient(right, #1A98EF 70%, #FFFD2B 30%);
+}
+
+.btn_iniciar_session {
+    margin-top: 30px;
+    font-family: "Teko-Medium";
+    background: linear-gradient(90deg, #1A98EF, #EF1AED, #FFFD2B);
+    border: none;
+    color: #fff;
+}
+
+.cuarto__parrafo {
+    margin-top: 30px;
+    font-family: "Teko-Medium";
+    font-size: 16px;
+    border: 1px solid purple;
+    background: -webkit-radial-gradient(center, ellipse, #FF732B, #2BFF61);
+}
+
+/* 
+    Filter que puede hacer 
+    blur
+    grayscale
+    sepia
+    brigthness
+    invert
+    opacity
+    contrast
+    saturate
+    hue-rotate
+ */
+
+.primera_imagen {
+    filter: brightness(5)
+}
+
+.segunda_imagen {
+    /* 0.1 hasta el 1 */
+    filter: grayscale(1)
+}
+
+.tercer_imagen {
+    filter: sepia(1)
+}
+
+.cuarta_imagen {
+    /* 1px hasta 10px */
+    filter: blur(10px)
+}
+
+.quinta_imagen {
+    filter: invert(1)
+}
+
+.sexta_imagen {
+    filter: opacity(1)
+}
+
+.septima_imagen {
+    filter: contrast(0.5)
+}

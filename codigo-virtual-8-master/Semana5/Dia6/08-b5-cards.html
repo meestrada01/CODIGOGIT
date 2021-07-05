@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<style>
+			.card {
+				cursor: pointer;
+				transition: box-shadow 0.2s ease;
+			}
+		</style>
+		<title>Document</title>
+	</head>
+	<body>
+		<h1 class="display-1">Cards en Bootstrap</h1>
+
+		<main class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card shadow">
+						<img
+							src="http://placehold.it/150X150"
+							alt="imagen"
+							class="card-img-top"
+						/>
+						<div class="card-body">
+							<p class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+								magnam earum ab aspernatur error animi quae perspiciatis quam.
+								Earum dolore unde recusandae accusantium suscipit totam vel,
+								enim quas sed ex?
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card shadow">
+						<div class="card-header">
+							<h5 class="card-title">Cabecera</h5>
+						</div>
+						<div class="card-body">
+							<div class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+								magnam earum ab aspernatur error animi quae perspiciatis quam.
+								Earum dolore unde recusandae accusantium suscipit totam vel,
+								enim quas sed ex?
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card shadow">
+						<div class="card-header">
+							<h5 class="card-title">Cabecera</h5>
+						</div>
+						<div class="card-body">
+							<div class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+								magnam earum ab aspernatur error animi quae perspiciatis quam.
+								Earum dolore unde recusandae accusantium suscipit totam vel,
+								enim quas sed ex?
+							</div>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary">Agregar al carrito</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			// atrapamos a todos los elementos de la clase "card"
+			const cards = document.querySelectorAll('.card');
+			// recorremos a todos los cards para añadirle dos eventos a cada uno
+			cards.forEach((card) => {
+				card.onmouseover = () => {
+					card.classList.remove('shadow');
+					card.classList.add('shadow-sm');
+				};
+				card.onmouseout = () => {
+					card.classList.remove('shadow-sm');
+					card.classList.add('shadow');
+				};
+			});
+		</script>
+	</body>
+</html>

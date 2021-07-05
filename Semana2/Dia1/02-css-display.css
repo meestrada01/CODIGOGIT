@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  height: 60px;
+  box-shadow: 0px 0px 8px #bbb;
+}
+
+.color-primario {
+  color: #a11477;
+}
+
+.navegacion {
+  /* opacity: 0; => colocar de color transparente a un
+  elemento, pero aún así puedo seleccionarlo o darle click*/
+  /* visibility: hidden; => Convierte a un elemento en invisible
+  pero además no se puede seleccionar o dar click en el elemento
+  Sin embargo su espacio en el DOM es respetado*/
+  /* display: block; => desapacere un elemento del DOM
+  y su espacio es ocupado por los demás elementos*/
+  /* display: none; */
+}
+
+.navegacion ul {
+  /* border: 1px solid blue; */
+}
+
+.navegacion ul li {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-right: 15px;
+  background-color: #a11477;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.navegacion ul li i {
+  transition: all 0.3s ease;
+}
+
+.navegacion ul li:hover a {
+  text-decoration: underline;
+}
+
+.navegacion ul li:hover i {
+  transform: rotate(45deg);
+}
+
+aside {
+  /*calc() sirve para realizar operaciones
+  con diferentes unidades de medida y poder hacer
+  calculos */
+  height: calc(100vh - 60px);
+  background-color: #a11477;
+  width: 240px;
+}
+
+section, aside {
+  display: inline-block;
+}
+
+section {
+  background-color: #7269c8;
+  width: calc(100% - 240px);
+  height: calc(100vh - 60px);
+}
